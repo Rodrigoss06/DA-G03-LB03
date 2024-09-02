@@ -1,0 +1,109 @@
+/* Estilos generales */
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Estilos del menú */
+.menuContent {
+    position: fixed;
+    padding: 8px;
+    display: flex;
+    justify-content: space-around;
+    top: 0;
+    background-color: #35009E;
+    align-items: center;
+    width: 100%;
+    z-index: 10;
+}
+
+.menuContent a {
+    color: white;
+}
+
+/* Estilos del contenido principal */
+main {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+main h1 {
+    font-weight: 200;
+    font-size: 45px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    margin: 10px 200px;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+section article {
+    width: 400px;
+}
+
+section img {
+    width: 100%;
+}
+
+@media (max-width: 900px) {
+    section {
+        margin: 10px 50px;
+        gap: 40px;
+    }
+
+    section article {
+        width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .menuContent {
+        flex-direction: column;
+        align-items: flex-start;
+
+        width: 200px;
+        margin: 0 2px 2px 2px;
+        padding: 6px 0 6px 0;
+        border-radius: 6px;
+    }
+
+    .menuContent a {
+        padding: 12px 0 12px 0;
+        border-bottom: 2px solid #fff;
+        display: flex;
+        height: 25px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+    }
+
+
+    main h1 {
+        font-size: 32px;
+    }
+
+    section {
+        margin: 10px;
+        gap: 20px;
+    }
+
+    section article {
+        width: 100%;
+    }
+
+    section img {
+        width: 100%;
+    }
+}
